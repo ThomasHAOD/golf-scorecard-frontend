@@ -12,8 +12,8 @@
 /* Button & Input Styles */
 .par-button,
 .inc-button {
-  width: 15vw;
-  height: 15vw;
+  width: 60px;
+  height: 60px;
   border-radius: 0.4rem;
   margin: 1rem;
 }
@@ -29,7 +29,7 @@
 }
 
 .score-input {
-  height: 10vw;
+  height: 60px;
   width: 30vw;
   border-radius: 0.4rem;
   text-align: center;

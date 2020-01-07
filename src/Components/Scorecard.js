@@ -58,7 +58,7 @@ const Scorecard = props => {
   if (runningTotal === 0) {
     score = "Even";
   } else if (runningTotal < 0) {
-    score = `+${runningTotal.toString()}`;
+    score = `+${Math.abs(runningTotal).toString()}`;
   } else {
     score = `-${Math.abs(runningTotal).toString()}`;
   }
