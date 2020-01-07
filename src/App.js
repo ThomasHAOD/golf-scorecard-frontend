@@ -16,9 +16,11 @@ function App() {
   const [pars, setPars] = useState([]);
 
   const addScoreAndPar = (score, par) => {
-    const newScores = scores.push(score);
+    const newScores = [...scores];
+    newScores.push(score);
     setScores(newScores);
-    const newPars = pars.push(par);
+    const newPars = [...pars];
+    newPars.push(par);
     setPars(newPars);
   };
 
