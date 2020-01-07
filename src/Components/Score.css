@@ -1,0 +1,29 @@
+/* Main Styles */
+.score {
+  align-content: center;
+  text-align: center;
+}
+
+/* Div Styles */
+.par {
+  display: inline-block;
+}
+
+/* Button & Input Styles */
+.par-button,
+.inc-button {
+  width: 10vw;
+  height: 10vw;
+  font-size: 1rem;
+  background: lightgreen;
+  border-radius: 0.4rem;
+  /* position: absolute; */
+  margin: 1rem;
+}
+
+.score-input {
+  height: 10vw;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
