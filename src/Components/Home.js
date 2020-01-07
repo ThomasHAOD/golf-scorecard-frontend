@@ -1,8 +1,9 @@
 import React from "react";
+import "./Home.css";
 
 const Home = props => {
   return (
-    <div>
+    <div className="Home">
       <button>New Round</button>
     </div>
   );
