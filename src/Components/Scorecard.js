@@ -86,12 +86,9 @@ const Scorecard = props => {
   }
   return (
     <div className="scorecard">
-      <h1>Scorecard</h1>
+      <h1 className="title">Scorecard</h1>
       {scoreTable}
-      <h2 className="total-score">
-        Score:
-        {score}
-      </h2>
+      <h2 className="total-score">Score: {score}</h2>
       {button}
     </div>
   );
