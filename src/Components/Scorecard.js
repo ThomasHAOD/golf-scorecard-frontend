@@ -5,11 +5,17 @@ import "./Scorecard.css";
 
 const Scorecard = props => {
   const scoreRows = props.scores.map((score, index) => {
+    let overUnderScore = "even";
+    if (score > props.pars[index]) {
+      overUnderScore = "over";
+    } else if (score < props.pars[index]) {
+      overUnderScore = "under";
+    }
     return (
       <tr>
         <td>{index + 1}</td>
         <td>{props.pars[index]}</td>
-        <td>{score}</td>
+        <td className={overUnderScore}>{score}</td>
       </tr>
     );
   });
