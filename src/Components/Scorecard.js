@@ -14,6 +14,38 @@ const Scorecard = props => {
     );
   });
 
+  let scoreTable = (
+    <table>
+      <tr>
+        <th>Hole</th>
+        <th>Par</th>
+        <th>Strokes</th>
+      </tr>
+      <tbody>{scoreRows}</tbody>
+    </table>
+  );
+
+  //   if (props.holes === 18) {
+  //     scoreTable = (
+  //       <table>
+  //         <tr>
+  //           <th colSpan="3">Front 9</th>
+  //           <th colSpan="3">Back 9</th>
+  //         </tr>
+  //         <tr>
+  //           <th>Hole</th>
+  //           <th>Par</th>
+  //           <th>Strokes</th>
+
+  //           <th>Hole</th>
+  //           <th>Par</th>
+  //           <th>Strokes</th>
+  //         </tr>
+  //         <tbody>{scoreRows}</tbody>
+  //       </table>
+  //     );
+  //   }
+
   let runningTotal = 0;
 
   props.scores.forEach((score, index) => {
@@ -31,24 +63,30 @@ const Scorecard = props => {
     score = `-${Math.abs(runningTotal).toString()}`;
   }
 
+  let button = (
+    <Link to="/score">
+      <button className="next-hole-button">Next Hole</button>
+    </Link>
+  );
+
+  if (props.holes === props.scores.length) {
+    button = (
+      <Link to="/">
+        <button className="next-hole-button" onClick={props.newRound}>
+          New Round
+        </button>
+      </Link>
+    );
+  }
   return (
     <div className="scorecard">
       <h1>Scorecard</h1>
-      <table>
-        <tr>
-          <th>Hole</th>
-          <th>Par</th>
-          <th>Strokes</th>
-        </tr>
-        <tbody>{scoreRows}</tbody>
-      </table>
-      <h1 className="total-score">
+      {scoreTable}
+      <h2 className="total-score">
         Score:
         {score}
-      </h1>
-      <Link to="/score">
-        <button className="next-hole-button">Next Hole</button>
-      </Link>
+      </h2>
+      {button}
     </div>
   );
 };

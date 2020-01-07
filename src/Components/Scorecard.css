@@ -9,7 +9,7 @@
   background: lightgreen;
   border-radius: 0.5rem;
   position: absolute;
-  bottom: 10vh;
+  bottom: 5vh;
   left: 25vw;
 }
 
@@ -18,7 +18,7 @@ table {
   background: lightgray;
   margin: 0.5rem;
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 25vw;
 }
 th {
@@ -31,5 +31,5 @@ tr {
 
 .total-score {
   position: relative;
-  top: 50vh;
+  top: 60vh;
 }

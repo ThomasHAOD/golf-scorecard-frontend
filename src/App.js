@@ -25,6 +25,11 @@ function App() {
     setPars(newPars);
   };
 
+  const newRound = () => {
+    setScores([]);
+    setPars([]);
+  };
+
   return (
     <div className="App">
       <Router>
@@ -46,7 +51,15 @@ function App() {
         <Route
           exact
           path="/scorecard"
-          render={props => <Scorecard {...props} scores={scores} pars={pars} />}
+          render={props => (
+            <Scorecard
+              {...props}
+              scores={scores}
+              pars={pars}
+              holes={holes}
+              newRound={newRound}
+            />
+          )}
         />
       </Router>
     </div>
