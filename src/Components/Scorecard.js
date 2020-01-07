@@ -42,7 +42,7 @@ const Scorecard = props => {
         </tr>
         <tbody>{scoreRows}</tbody>
       </table>
-      <h1>
+      <h1 className="total-score">
         Score:
         {score}
       </h1>

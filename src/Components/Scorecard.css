@@ -18,7 +18,7 @@ table {
   background: lightgray;
   margin: 0.5rem;
   position: absolute;
-  top: 40vh;
+  top: 20vh;
   left: 25vw;
 }
 th {
@@ -27,4 +27,9 @@ th {
 }
 tr {
   background: gray;
+}
+
+.total-score {
+  position: relative;
+  top: 50vh;
 }
