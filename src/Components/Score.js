@@ -42,13 +42,14 @@ const Score = props => {
       </div>
 
       <br />
-
-      <button
-        className="button"
-        onClick={() => props.addScoreAndPar(strokes, par)}
-      >
-        Save
-      </button>
+      <Link to="/scorecard">
+        <button
+          className="button"
+          onClick={() => props.addScoreAndPar(strokes, par)}
+        >
+          Save
+        </button>
+      </Link>
     </div>
   );
 };

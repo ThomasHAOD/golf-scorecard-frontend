@@ -1,0 +1,21 @@
+.next-hole-button {
+  width: 50vw;
+  height: 10vh;
+  font-size: 2rem;
+  background: lightgreen;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 10vh;
+  left: 25vw;
+}
+
+table {
+  background: lightgray;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+tr {
+  background: gray;
+}

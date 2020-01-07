@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Home from "./Components/Home";
 import Holes from "./Components/Holes";
 import Score from "./Components/Score";
+import Scorecard from "./Components/Scorecard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
@@ -41,6 +42,11 @@ function App() {
           render={props => (
             <Score {...props} scores={scores} addScoreAndPar={addScoreAndPar} />
           )}
+        />
+        <Route
+          exact
+          path="/scorecard"
+          render={props => <Scorecard {...props} scores={scores} pars={pars} />}
         />
       </Router>
     </div>
