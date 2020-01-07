@@ -14,8 +14,12 @@
 }
 
 table {
+  width: 50vw;
   background: lightgray;
   margin: 0.5rem;
+  position: absolute;
+  top: 40vh;
+  left: 25vw;
 }
 th {
   background-color: #4caf50;
