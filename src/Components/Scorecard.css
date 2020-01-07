@@ -1,3 +1,7 @@
+.scorecard {
+  text-align: center;
+}
+
 .next-hole-button {
   width: 50vw;
   height: 10vh;
@@ -11,6 +15,7 @@
 
 table {
   background: lightgray;
+  margin: 0.5rem;
 }
 th {
   background-color: #4caf50;
