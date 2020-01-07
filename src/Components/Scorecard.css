@@ -9,7 +9,7 @@
   background: lightgreen;
   border-radius: 0.5rem;
   position: absolute;
-  bottom: 5vh;
+  bottom: 1vh;
   left: 25vw;
 }
 
@@ -31,7 +31,7 @@ tr {
 
 .total-score {
   position: relative;
-  top: 55vh;
+  top: 60vh;
 }
 
 .over {
