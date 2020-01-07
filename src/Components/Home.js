@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = props => {
   return (
     <div className="Home">
-      <button>New Round</button>
+      <button className="new-round">New Round</button>
     </div>
   );
 };

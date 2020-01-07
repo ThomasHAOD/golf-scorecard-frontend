@@ -1,10 +1,17 @@
-.new-round {
+.button {
   width: 50vw;
   height: 10vh;
   font-size: 2rem;
   background: lightgreen;
   border-radius: 0.5rem;
   position: absolute;
-  top: 45vh;
   left: 25vw;
+}
+
+.nine-holes {
+  top: 35vh;
+}
+
+.eighteen-holes {
+  top: 55vh;
 }
