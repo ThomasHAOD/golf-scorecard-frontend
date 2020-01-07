@@ -12,18 +12,26 @@
 /* Button & Input Styles */
 .par-button,
 .inc-button {
-  width: 10vw;
-  height: 10vw;
-  font-size: 1rem;
-  background: lightgreen;
+  width: 15vw;
+  height: 15vw;
   border-radius: 0.4rem;
-  /* position: absolute; */
   margin: 1rem;
+}
+
+.par-button {
+  background: lightgreen;
+  font-size: 1.5rem;
+}
+
+.inc-button {
+  background: coral;
+  font-size: 1.5rem;
 }
 
 .score-input {
   height: 10vw;
+  width: 30vw;
   border-radius: 0.4rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }

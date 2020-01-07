@@ -12,6 +12,16 @@ function App() {
     setHoles(number);
   };
 
+  const [scores, setScores] = useState([]);
+  const [pars, setPars] = useState([]);
+
+  const addScoreAndPar = (score, par) => {
+    const newScores = scores.push(score);
+    setScores(newScores);
+    const newPars = pars.push(par);
+    setPars(newPars);
+  };
+
   return (
     <div className="App">
       <Router>
@@ -23,7 +33,13 @@ function App() {
             <Holes {...props} setNumberOfHoles={setNumberOfHoles} />
           )}
         />
-        <Route exact path="/score" render={props => <Score {...props} />} />
+        <Route
+          exact
+          path="/score"
+          render={props => (
+            <Score {...props} scores={scores} addScoreAndPar={addScoreAndPar} />
+          )}
+        />
       </Router>
     </div>
   );
